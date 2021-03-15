@@ -1,0 +1,19 @@
+.method-btn {
+	flex: 1 1 140px;
+	width: 50%;
+	height: 2.25em;
+	padding: 0.5em;
+	margin: 0.25rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	color: $text-color-white;
+	background-color: $calendar-theme-color;
+	border: none;
+	cursor: pointer;
+	&:active {
+		transform: scale3d(0.99, 0.99, 0.99);
+	}
+	&:focus {
+		outline: none;
+	}
+}

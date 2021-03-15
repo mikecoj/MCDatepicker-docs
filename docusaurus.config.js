@@ -9,14 +9,14 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Mike Cojocari', // Usually your GitHub org/user name.
   projectName: 'MCDatepicker', // Usually your repo name.
-  
+
   themeConfig: {
     navbar: {
       title: 'MCDatepicker',
-      logo: {
-        alt: 'MCDatepicker Logo',
-        src: 'img/logo192.png',
-      },
+      // logo: {
+      //   alt: 'MCDatepicker Logo',
+      //   src: 'img/logo192.png',
+      // },
       items: [
         {to: 'get-started', label: 'Get Started', position: 'right'},
         // {to: '/usage', label: 'Usage', position: 'right'},
@@ -35,63 +35,63 @@ module.exports = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Pages',
-          items: [
-            {
-              label: 'Home',
-              to: '/',
-            },
-            {
-              label: 'Get Started',
-              to: 'get-started',
-            },
-            {
-              label: 'Usage',
-              to: 'Usage',
-            },
-            {
-              label: 'Docs',
-              to: 'docs',
-            },
-            {
-              label: 'Try Online',
-              to: 'try-online',
-            },
-          ],
-        },
-        {
-          title: 'Learn',
-          items: [
-            {
-              label: 'Introduction',
-              to: 'docs/',
-            },
-            {
-              label: 'Instalation',
-              to: 'docs/instalation',
-            },
-            {
-              label: 'Configuration',
-              to: 'docs/configuration',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/mikecoj/MCDatepicker',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Mike Cojocari.`,
-    },
+    // footer: {
+    //   style: 'dark',
+    //   links: [
+    //     {
+    //       title: 'Pages',
+    //       items: [
+    //         {
+    //           label: 'Home',
+    //           to: '/',
+    //         },
+    //         {
+    //           label: 'Get Started',
+    //           to: 'get-started',
+    //         },
+    //         {
+    //           label: 'Usage',
+    //           to: 'Usage',
+    //         },
+    //         {
+    //           label: 'Docs',
+    //           to: 'docs',
+    //         },
+    //         {
+    //           label: 'Try Online',
+    //           to: 'try-online',
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: 'Learn',
+    //       items: [
+    //         {
+    //           label: 'Introduction',
+    //           to: 'docs/',
+    //         },
+    //         {
+    //           label: 'Instalation',
+    //           to: 'docs/instalation',
+    //         },
+    //         {
+    //           label: 'Configuration',
+    //           to: 'docs/configuration',
+    //         }
+    //       ],
+    //     },
+    //     {
+    //       title: 'More',
+    //       items: [
+    //         {
+    //           label: 'GitHub',
+    //           href: 'https://github.com/mikecoj/MCDatepicker',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    //   copyright: `Copyright © ${new Date().getFullYear()} Mike Cojocari.`,
+    // },
     colorMode: {
       disableSwitch: true,
     }
@@ -107,9 +107,10 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/assets/scss/index.scss'),
         },
       },
     ],
   ],
+  plugins: ['docusaurus-plugin-sass']
 };

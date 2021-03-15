@@ -1,0 +1,127 @@
+.hljs {
+	display: block;
+	overflow-x: auto;
+	min-width: 50px;
+	min-height: 20px;
+	margin: 1em 0;
+	padding: 1.2em;
+	background-color: #173549;
+	border-radius: 10px;
+	text-align: left;
+	@include for-desktop {
+		margin: 2em 0;
+		padding: 2em;
+	}
+	code {
+
+		color: $text-color-white;
+	}
+
+	/* Works on Firefox */
+	& {
+		scrollbar-width: thin;
+		scrollbar-color: #122c3e #254155;
+	}
+
+	/* Works on Chrome, Edge, and Safari */
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #254155;
+		border-radius: 0 0 6px 6px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #122c3e;
+		border-radius: 20px;
+		border: 2px solid #122c3e;
+	}
+
+	&-tag {
+		color: #89ddff;
+	}
+
+	&.js {
+		color: #82aaff;
+	}
+	&-subst {
+		color: #f8f8f2;
+	}
+
+	&-strong,
+	&-emphasis {
+		color: #a8a8a2;
+	}
+
+	&-literal {
+		color: #ff9cac;
+	}
+	&-bullet,
+	&-quote,
+	&-number,
+	&-regexp,
+	&-link {
+		color: #ae81ff;
+	}
+
+	&-code,
+	&-title,
+	&-section,
+	&-selector-class {
+		color: #a6e22e;
+	}
+
+	&-strong {
+		font-weight: bold;
+	}
+
+	&-emphasis {
+		font-style: italic;
+	}
+
+	&-name {
+		color: #f07178;
+	}
+	&-keyword,
+	&-selector-tag {
+		color: #f07178;
+	}
+
+	&-attr {
+		color: #c792ea;
+	}
+
+	&-symbol,
+	&-attribute {
+		color: #66d9ef;
+	}
+
+	&-params,
+	&-class &-title {
+		color: #f8f8f2;
+	}
+
+	&-string,
+	&-type,
+	&-built_in,
+	&-builtin-name,
+	&-selector-id,
+	&-selector-attr,
+	&-selector-pseudo,
+	&-addition,
+	&-variable,
+	&-template-variable {
+		color: #e6db74;
+	}
+
+	&-comment {
+		color: #546e7a;
+	}
+	&-deletion,
+	&-meta {
+		color: #75715e;
+	}
+}

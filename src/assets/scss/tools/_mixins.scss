@@ -1,0 +1,5 @@
+@mixin for-desktop {
+	@media (min-width: $bkp-tablet) {
+		@content;
+	}
+}

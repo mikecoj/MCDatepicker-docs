@@ -1,0 +1,37 @@
+.method-field {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	// justify-content: space-between;
+	width: 100%;
+	// padding: 0.25em 0;
+
+	&__btn,
+	&__result {
+		flex: 1 1 140px;
+		width: 50%;
+		height: 2.25em;
+		margin: 0.25rem;
+		font-size: 1rem;
+		border-radius: 5px;
+	}
+
+	&__result {
+		border: 1px solid $active-grey-color;
+		padding: 0.5em;
+	}
+
+	&__btn {
+		color: $text-color-white;
+		background-color: $calendar-theme-color;
+		border: none;
+		cursor: pointer;
+		&:active {
+			transform: scale3d(0.99, 0.99, 0.99);
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+// 140px

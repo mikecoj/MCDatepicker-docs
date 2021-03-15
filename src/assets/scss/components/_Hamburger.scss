@@ -1,0 +1,56 @@
+.hamburger {
+	position: absolute;
+	cursor: pointer;
+	font-size: 0.7rem;
+	right: 0;
+	border: 0;
+	width: 2.3em;
+	height: 1.65em;
+	padding: 0;
+	background-color: transparent;
+	@include for-desktop {
+		display: none;
+	}
+
+	span {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 0.25em;
+		// background: $calendar-theme-color;
+		background: white;
+		border-radius: calc(0.25em / 2);
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: all 0.2s ease-in-out;
+
+		&:nth-child(1) {
+			top: 0px;
+		}
+		&:nth-child(2) {
+			top: calc(50% - calc(0.25em / 2));
+		}
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+
+	// &:hover,
+	&--open {
+		span {
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				top: calc(50% - calc(0.25em / 2));
+			}
+			&:nth-child(2) {
+				width: 0%;
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+				bottom: calc(50% - calc(0.25em / 2));
+			}
+		}
+	}
+}

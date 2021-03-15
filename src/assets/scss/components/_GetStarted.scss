@@ -1,0 +1,27 @@
+.get-started {
+	background-color: $main-theme-color;
+	// background-color: #38ada9;
+	// background-color: #008e84;
+	// color: rgb(235, 235, 235);
+	color: $text-color-white;
+}
+
+.primary-content {
+	// text-align: left;
+	text-align: center;
+
+	&__block {
+		margin-bottom: 2em;
+
+		// color: #1a2e2c;
+		// color: #2d382d;
+		// color: #222222;
+		// color: #071117;
+		// color: #173549;
+	}
+
+	// h1 {
+	// 	padding: 1em 0;
+	// 	// color: #173549;
+	// }
+}

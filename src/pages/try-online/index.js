@@ -1,81 +1,33 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import { useEffect, useState} from 'react';
-// import SyntaxHighlighter from 'react-syntax-highlighter';
-
-const Card = ({ name, children }) => {
-	return (
-		<div className="card">
-			<h1 className="card__header">{name}</h1>
-			<div className="card__body">{children}</div>
-		</div>
-	);
-};
-
-const FormField = ({ type, name, options }) => {
-	return (
-		<div className="form-field">
-			<label className="form-field__label"> {name}</label>
-			{type === 'input' && <input className="form-field__input" type="text" />}
-			{type === 'select' && options && (
-				<select className="form-field__select" name={name}>
-					{options.map((option) => (
-						<option className="form-field__options" value={option} key={option}>
-							{option}
-						</option>
-					))}
-				</select>
-			)}
-		</div>
-	);
-};
-
-const MethodButton = ({ name, onClickHandler }) => {
-	return (
-		<button className="method-btn" onClick={onClickHandler}>
-			{name}
-		</button>
-	);
-};
-
-
-const MethodField = ({ name, onClickHandler }) => {
-	const [result, setResult] = useState(null);
-	const handleClick = () => {
-		const val = onClickHandler();
-		setResult(val);
-	};
-	return (
-		<div className="method-field">
-			<button className="method-field__btn" onClick={handleClick}>
-				{name}
-			</button>
-			<div className="method-field__result">{result}</div>
-		</div>
-	);
-};
+import { useEffect } from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+// import Card from '../components/Card';
+import Card from '../../Components/Card';
+import FormField from '../../Components/FormField';
+import MethodButton from '../../Components/MethodButton';
+import MethodField from '../../Components/MethodField';
 
 const options = `const options = {
     el: '#datepicked'
 }`;
 
 const TryOnline = () => {
-	// useEffect(() => {
-	// 	const MCDatepicker = window.MCDatepicker;
-	// 	const calendar = MCDatepicker.create({ el: '#datepicker', bodyType: 'modal' });
-	// 	return () => {
-	// 		calendar.destroy();
-	// 	};
-	// }, []);
+	useEffect(() => {
+		const MCDatepicker = window.MCDatepicker;
+		const calendar = MCDatepicker.create({ el: '#datepicker', bodyType: 'modal' });
+		return () => {
+			calendar.destroy();
+		};
+	}, []);
 	return (
-		<Layout title={'Try Online'}>
 		<main className="try-online page">
 			<div className="container row">
 				<Card name="Demo ">
 					<input id="datepicker" readOnly type="text" />
-					{/* {<SyntaxHighlighter language="javascript" useInlineStyles={false} wrapLongLines={true}>
+					<SyntaxHighlighter language="javascript" useInlineStyles={false} wrapLongLines={true}>
 						{options}
-					</SyntaxHighlighter>} */}
+					</SyntaxHighlighter>
 				</Card>
 				<Card name="Options ">
 					<FormField type="input" name="el" />
@@ -113,16 +65,7 @@ const TryOnline = () => {
 				</Card>
 			</div>
 		</main>
-		</Layout>
 	);
 };
-
-// const TryOnline = () => {
-// 	return (
-// 		<Layout title={'Try Online'}>
-// 			<main>Try Online</main>
-// 		</Layout>
-// 	)
-// }
 
 export default TryOnline;

@@ -1,6 +1,18 @@
 import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import Layout from '@theme/Layout';
 
+const htmlCode = `<!-- HTML -->
+<div class="form-field card">
+  <label class="form-field__label">Datepicker Demo</label>
+  <input id="datepicker" type="text">
+</div>`;
+
+const jsCode = `/* javascript */
+const datePicker = MCDatepicker.create({
+  el: '#datepicker',
+  bodyType: 'modal'
+});`;
 
 const Usage = () => {
 	return (
@@ -13,14 +25,14 @@ const Usage = () => {
 					</div>
 					<div className="usage__block row">
 						<div className="col">
-							{/* {<SyntaxHighlighter language="xml" useInlineStyles={false}>
+							<SyntaxHighlighter language="xml" useInlineStyles={false}>
 								{htmlCode}
-							</SyntaxHighlighter>} */}
+							</SyntaxHighlighter>
 						</div>
 						<div className="col">
-							{/* {<SyntaxHighlighter language="javascript" useInlineStyles={false}>
+							{<SyntaxHighlighter language="javascript" useInlineStyles={false}>
 								{jsCode}
-							</SyntaxHighlighter>} */}
+							</SyntaxHighlighter>}
 						</div>
 					</div>
 				</section>

@@ -1,13 +1,15 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-// import SyntaxHighlighter from 'react-syntax-highlighter';
+import TabItem from '@theme/TabItem';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
-// const installation = `<head>
-// <!-- ... -->
-// <link  href="https://cdn.jsdelivr.net/gh/mikecoj/MCDatepicker/dist/mc-calendar.min.css" rel="stylesheet">
-// <script src="https://cdn.jsdelivr.net/gh/mikecoj/MCDatepicker/dist/mc-calendar.min.js"></script>
-// <!-- Javascript Files -->
-// </head>`;
+
+const installation = `<head>
+<!-- ... -->
+<link  href="https://cdn.jsdelivr.net/gh/mikecoj/MCDatepicker@0.1.0/dist/mc-calendar.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/mikecoj/MCDatepicker@0.1.0/dist/mc-calendar.min.js"></script>
+<!-- Javascript Files -->
+</head>`;
 
 const GetStarted = () => {
 	return (
@@ -19,10 +21,11 @@ const GetStarted = () => {
 					<p>
 						Using hosted files is probably the easiest way to get started using CMDatepicker.js, you simply need to include the following links in your page.
 					</p>
+					
 					{/* <Codeblock lang="html" code={installation} /> */}
-					{/* {<SyntaxHighlighter language="xml" useInlineStyles={false}>
+					<SyntaxHighlighter language="xml" useInlineStyles={false}>
 						{installation}
-					</SyntaxHighlighter>} */}
+					</SyntaxHighlighter>
 				</div>
 				<div className="primary-content__block">
 					<h1>Download and Use</h1>

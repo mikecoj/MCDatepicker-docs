@@ -1,0 +1,36 @@
+.container {
+	// width: min(90%, 1200px);
+	width: 90%;
+	max-width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	min-height: calc(100vh - 4.5rem);
+	padding: 2rem 0;
+	// margin-top: 4.4rem;
+	// padding: 2rem 0;
+}
+
+.pagination {
+	&-nav{
+		&__link{
+			&:hover {
+				border-color: $calendar-theme-color
+			}
+		}
+	}
+}

@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+// import '../assets/scss/index.scss';
 // import styles from './styles.module.css';
 
 // const features = [
@@ -104,8 +105,8 @@ const Home = () => {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
 		<main className="home flex-center page">
-			<section className="hero container">
-				<div className="hero__text">
+			<section className="m-hero container">
+				<div className="m-hero__text">
 					<h1>MCDatepicker.js</h1>
 					<h3>A simple lightweight cross-browser Vanilla JS datepicker</h3>
 					<p>
@@ -121,7 +122,7 @@ const Home = () => {
 						</a>
 					</div>
 				</div>
-				<img className="hero__img" src={CalendarPic} alt="Calendar Demo"></img>
+				<img className="m-hero__img" src={CalendarPic} alt="Calendar Demo"></img>
 			</section>
 		</main>
     </Layout>

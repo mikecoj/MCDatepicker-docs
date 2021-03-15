@@ -1,0 +1,18 @@
+.try-online {
+	background-color: $main-bg-color;
+	color: $text-color-grey;
+	.container {
+		flex-wrap: wrap;
+
+		justify-content: space-between;
+	}
+}
+
+#datepicker {
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid $active-grey-color;
+	margin: 0.5rem 0;
+}

@@ -18,14 +18,14 @@ module.exports = {
       type: 'doc',
       id: 'methods', // Document id (string).
     },
-    {
-      type: 'doc',
-      id: 'getters', // Document id (string).
-    },
-    {
-      type: 'doc',
-      id: 'setters', // Document id (string).
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'getters', // Document id (string).
+    // },
+    // {
+    //   type: 'doc',
+    //   id: 'setters', // Document id (string).
+    // },
     {
       type: 'doc',
       id: 'event-hooks', // Document id (string).

@@ -1,0 +1,31 @@
+.form-field {
+	display: flex;
+	flex-wrap: wrap;
+	// justify-content: space-between;
+	width: 100%;
+	// & + & {
+	// 	margin-top: 0.5em;
+	// }
+	&__label,
+	&__input,
+	&__select {
+		font-size: 1rem;
+		width: 50%;
+		padding: 0.5em;
+		margin: 0.25em;
+		flex: 1 0 170px;
+		&:focus {
+			outline: 1px $main-theme-color auto;
+		}
+	}
+	&__label {
+		text-align: right;
+	}
+	&__input,
+	&__select {
+		color: $text-color-grey;
+		border-radius: 5px;
+		background-color: inherit;
+		border: 1px solid $active-grey-color;
+	}
+}

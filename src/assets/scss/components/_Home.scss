@@ -1,0 +1,90 @@
+.home {
+	// background-color: #38ada9;
+	background-color: $main-theme-color;
+
+	// width: 100%;
+}
+
+.m-hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	@include for-desktop {
+		margin: 0;
+		flex-direction: row;
+	}
+
+	&__text {
+		text-align: center;
+		width: 100%;
+		// min-width: 390px;
+		// color: rgb(235, 235, 235);
+		color: $text-color-white;
+		margin: 2.5em 0;
+
+		@include for-desktop {
+			text-align: left;
+			width: 50%;
+			margin: 0;
+		}
+
+		h1 {
+			font-family: 'Salsa', cursive;
+			// font-size: 8vw;
+			font-size: clamp(2em, 8vw, 3em);
+			margin-bottom: 1em;
+			// padding: 0.5em 0;
+			@include for-desktop {
+				margin-bottom: 0;
+			}
+		}
+		h3 {
+			padding: 0.5em 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 1.2rem;
+			line-height: 1.6;
+		}
+		p {
+			padding: 1em 0 2em;
+			line-height: 1.6;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 500px;
+		margin: 2.5em 0;
+
+		@include for-desktop {
+			margin: 0;
+			width: 45%;
+		}
+	}
+}
+
+.btn {
+	padding: 1em 2em;
+	border-radius: 5px;
+	border: none;
+	color: $btn-color;
+	background-color: $text-color-white;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	appearance: button;
+	margin: 0.5em;
+	transition: all 0.1s ease-in-out;
+	&:active,
+	&:hover {
+		background-color: rgb(216, 240, 241);
+	}
+	@include for-desktop {
+		margin: 0;
+		& + & {
+			margin-left: 2em;
+		}
+	}
+}

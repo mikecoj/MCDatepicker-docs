@@ -1,0 +1,40 @@
+.navbar {
+    font-family: 'Roboto', sans-serif;
+	position: sticky;
+	top: 0;
+	width: 100%;
+    height: 4.5rem;
+    padding: 0;
+	color: $text-color-white;
+	background-color: $main-theme-color-dark;
+	box-shadow: 0 0 5px 2px rgba($main-theme-color-dark, $alpha: 0.6);
+
+
+    &__inner {
+    //     position: relative;
+    // text-align: center;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 1.2rem 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    &__title {
+        font-family: "Salsa",cursive;
+        font-size: 1.8rem;
+        color: $text-color-white;
+    }
+
+    &__item {
+        font-weight: 400;
+        color: $text-color-white;
+    }
+
+    &__link {
+        &:hover, &--active {
+            color: $calendar-theme-color
+        }
+    }
+}

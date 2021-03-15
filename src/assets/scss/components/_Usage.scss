@@ -1,0 +1,27 @@
+.usage {
+	background-color: $main-theme-color;
+	color: $text-color-white;
+	.row {
+		justify-content: space-between;
+	}
+	.col {
+		width: 100%;
+		@include for-desktop {
+			width: 48%;
+		}
+	}
+
+	&__block {
+		flex-direction: column;
+		@include for-desktop {
+			flex-direction: row;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		@include for-desktop {
+			margin-bottom: 1em;
+		}
+	}
+}

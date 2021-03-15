@@ -1,0 +1,26 @@
+/*============================================*/
+/*                  CSS Resets                */
+/*============================================*/
+
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+button {
+	&:focus {
+		outline: none;
+		background: inherit;
+	}
+}
+
+a,
+li,
+button {
+	-webkit-tap-highlight-color: transparent;
+}
