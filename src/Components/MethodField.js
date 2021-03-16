@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 const MethodField = ({ name, onClickHandler }) => {
 	const [result, setResult] = useState(null);
 	const handleClick = () => {

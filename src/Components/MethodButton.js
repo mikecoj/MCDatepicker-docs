@@ -1,3 +1,5 @@
+import React from 'react';
+
 const MethodButton = ({ name, onClickHandler }) => {
 	return (
 		<button className="method-btn" onClick={onClickHandler}>
