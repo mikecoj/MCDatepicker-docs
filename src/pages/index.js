@@ -101,14 +101,13 @@ const Home = () => {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 	return (
-  <Layout
-      title={`Hello from ${siteConfig.title}`}
+  <Layout title={siteConfig.title}
       description="Description will go into a meta tag in <head />">
 		<main className="home flex-center page">
-			<section className="m-hero container">
+			<section className="m-hero m-container">
 				<div className="m-hero__text">
 					<h1>MCDatepicker.js</h1>
-					<h3>A simple lightweight cross-browser Vanilla JS datepicker</h3>
+					<h3>Highly customizable Vanilla JS Datepicker with zero dependencies.</h3>
 					<p>
 						Get a date with JavaScript! Or a daterange, but that's not a good pun. Datepicker has no dependencies and weighs in at 5.9kb gzipped! Datepicker is
 						simple to use and looks sexy on the screen. A calendar pops up and you pick a date. #Boom.

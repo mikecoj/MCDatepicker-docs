@@ -2,3 +2,11 @@
 	background-color: $main-bg-color;
 	color: $text-color-grey;
 }
+
+.menu{
+	&__link {
+		&--active {
+			color: $calendar-theme-color;
+		}
+	}
+}

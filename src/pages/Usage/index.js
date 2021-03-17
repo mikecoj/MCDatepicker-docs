@@ -18,18 +18,18 @@ const Usage = () => {
 	return (
   		<Layout title={'Usage'}>
 			<main className="usage flex-center page">
-				<section className="usage__content container">
+				<section className="usage__content m-container">
 					<div className="usage__text">
 						<h1>Usage</h1>
 						<p>Create a new calendar instance using the following method:</p>
 					</div>
-					<div className="usage__block row">
-						<div className="col">
+					<div className="usage__block m-row">
+						<div className="m-col">
 							<SyntaxHighlighter language="xml" useInlineStyles={false}>
 								{htmlCode}
 							</SyntaxHighlighter>
 						</div>
-						<div className="col">
+						<div className="m-col">
 							{<SyntaxHighlighter language="javascript" useInlineStyles={false}>
 								{jsCode}
 							</SyntaxHighlighter>}

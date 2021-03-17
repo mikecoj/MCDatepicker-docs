@@ -21,16 +21,16 @@
 @import './objects/layout';
 
 // COMPONENTS
-// @import './components/App';
+@import './components/App';
 @import './components/Home';
 @import './components/GetStarted';
 @import './components/Usage';
 @import './components/Documentation';
 @import './components/TryOnline';
 @import './components/Header';
-@import './components/Navbar';
 @import './components/Hamburger';
-@import './components/Navigation';
+// @import './components/Navigation';
+@import './components/Navbar';
 @import './components/Codeblock';
 @import './components/Card';
 @import './components/FormField';

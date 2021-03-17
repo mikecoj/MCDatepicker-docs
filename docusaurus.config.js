@@ -18,18 +18,18 @@ module.exports = {
       //   src: 'img/logo192.png',
       // },
       items: [
-        {to: 'get-started', label: 'Get Started', position: 'right'},
+        {to: '/get-started', label: 'Get Started', position: 'right'},
         // {to: '/usage', label: 'Usage', position: 'right'},
-        {to: '/Usage', label: 'Usage', position: 'right'},
+        {to: '/usage', label: 'Usage', position: 'right'},
         {
-          to: 'docs/',
+          to: '/docs/',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
         },
-        {to: 'try-online', label: 'Try Online', position: 'right'},
+        {to: '/try-online', label: 'Try Online', position: 'right'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/mikecoj/MCDatepicker',
           label: 'GitHub',
           position: 'right',
         },

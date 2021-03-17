@@ -15,7 +15,7 @@ const GetStarted = () => {
 	return (
 		<Layout title={'Get Started'}>
 		<main className="get-started flex-center page">
-			<section className="primary-content container">
+			<section className="primary-content m-container">
 				<div className="primary-content__block">
 					<h1>CDN Links</h1>
 					<p>

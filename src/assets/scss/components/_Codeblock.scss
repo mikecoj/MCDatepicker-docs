@@ -12,10 +12,6 @@
 		margin: 2em 0;
 		padding: 2em;
 	}
-	code {
-
-		color: $text-color-white;
-	}
 
 	/* Works on Firefox */
 	& {
@@ -38,6 +34,10 @@
 		background-color: #122c3e;
 		border-radius: 20px;
 		border: 2px solid #122c3e;
+	}
+
+	code {
+		color: $text-color-white;
 	}
 
 	&-tag {

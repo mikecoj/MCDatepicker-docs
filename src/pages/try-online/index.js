@@ -23,7 +23,7 @@ const TryOnline = () => {
 	return (
 		<Layout title={'Try Online'}>
 			<main className="try-online page">
-				<div className="container row">
+				<div className="m-container m-row">
 					<Card name="Demo ">
 						<input id="datepicker" readOnly type="text" />
 						<SyntaxHighlighter language="javascript" useInlineStyles={false} wrapLongLines={true}>
@@ -55,11 +55,11 @@ const TryOnline = () => {
 						<MethodField name="getFullDate" onClickHandler={() => 'getFullDate'} />
 						<MethodField name="getEvents" onClickHandler={() => 'getEvents'} />
 						<MethodField name="getFormatedDate" onClickHandler={() => 'getFormatedDate'} />
-						<div className="card__row">
+						<div className="m-card__row">
 							<MethodButton name="open" onClickHandler={() => console.log('open')} />
 							<MethodButton name="close" onClickHandler={() => console.log('close')} />
 						</div>
-						<div className="card__row">
+						<div className="m-card__row">
 							<MethodButton name="reset" onClickHandler={() => console.log('reset')} />
 							<MethodButton name="destroy" onClickHandler={() => console.log('destroy')} />
 						</div>

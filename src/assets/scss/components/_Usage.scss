@@ -1,10 +1,10 @@
 .usage {
 	background-color: $main-theme-color;
 	color: $text-color-white;
-	.row {
+	.m-row {
 		justify-content: space-between;
 	}
-	.col {
+	.m-col {
 		width: 100%;
 		@include for-desktop {
 			width: 48%;
