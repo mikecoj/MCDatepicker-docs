@@ -98,33 +98,32 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import CalendarPic from '../assets/images/calendar_demo.png';
 
 const Home = () => {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+	const context = useDocusaurusContext();
+	const { siteConfig = {} } = context;
 	return (
-  <Layout title={siteConfig.title}
-      description="Description will go into a meta tag in <head />">
-		<main className="home flex-center page">
-			<section className="m-hero m-container">
-				<div className="m-hero__text">
-					<h1>MCDatepicker.js</h1>
-					<h3>Highly customizable Vanilla JS Datepicker with zero dependencies.</h3>
-					<p>
-						Get a date with JavaScript! Or a daterange, but that's not a good pun. Datepicker has no dependencies and weighs in at 5.9kb gzipped! Datepicker is
-						simple to use and looks sexy on the screen. A calendar pops up and you pick a date. #Boom.
-					</p>
-					<div>
-						<a className="btn btn--large" target="_blank" rel="noreferrer" href="https://github.com/mikecoj/MCDatepicker/archive/master.zip">
-							Download
-						</a>
-						<a className="btn btn--large" target="_blank" rel="noreferrer" href="https://github.com/mikecoj/MCDatepicker">
-							View On Github
-						</a>
+		<Layout title={siteConfig.title} description="Description will go into a meta tag in <head />">
+			<main className="home flex-center page">
+				<section className="m-hero m-container">
+					<div className="m-hero__text">
+						<h1>MCDatepicker.js</h1>
+						<h3>Highly customizable Vanilla JS Datepicker with zero dependencies.</h3>
+						<p>
+							Pick a date with Vanilla JavaScript! MCDatepicker It's a beautiful calendar component, that looks great eather on desctop or mobile devices. It
+							has no dependencies and it's highly customizable! Just add the options you need and boom, you're ready to go!!
+						</p>
+						<div>
+							<a className="btn btn--large" target="_blank" rel="noreferrer" href="https://github.com/mikecoj/MCDatepicker/archive/master.zip">
+								Download
+							</a>
+							<a className="btn btn--large" target="_blank" rel="noreferrer" href="https://github.com/mikecoj/MCDatepicker">
+								View On Github
+							</a>
+						</div>
 					</div>
-				</div>
-				<img className="m-hero__img" src={CalendarPic} alt="Calendar Demo"></img>
-			</section>
-		</main>
-    </Layout>
+					<img className="m-hero__img" src={CalendarPic} alt="Calendar Demo"></img>
+				</section>
+			</main>
+		</Layout>
 	);
 };
 

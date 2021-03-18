@@ -1,6 +1,9 @@
 .try-online {
 	background-color: $main-bg-color;
 	color: $text-color-grey;
+	&.page {
+		padding-top: 0;
+	}
 	.container {
 		flex-wrap: wrap;
 

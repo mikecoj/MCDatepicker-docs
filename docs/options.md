@@ -3,22 +3,22 @@ id: configuration
 title: Configuration
 ---
 
-|       Option        |  Type   |    Default     | Description                                                                     |
-| :-----------------: | :-----: | :------------: | ------------------------------------------------------------------------------- |
-|         el          | String  |     `null`     | The id of the input to be linked                                                |
-|     dateFormat      | String  | `DD-MMM-YYYY`  | The date format to be applied to the returned date                              |
-|      bodyType       | String  |    `modal`     | Body type of the calendar, currently suports only 2 types: 'modal' and 'inline' |
-| showCalendarDisplay | Boolean |     `true`     | Shows or hide the calendar display, works only on desktop                       |
-|   customWeekDays    |  Array  |  EN Weekdays   | The datepicker uses custom weekdays if they are present                         |
-|    customMonths     |  Array  | EN Month names | The datepicker uses custom month names if they are pressent                     |
-|    firstWeekday     | Number  |      `0 `      | Sets the firs weekday, accepts numbers 0 to 6                                   |
-|    selectedDate     |  Date   |     `null`     | Sets the default picked date                                                    |
-|   disableWeekends   | Boolean |    `false`     | Disables weekends                                                               |
-|   disableWeekDays   |  Array  |      `[]`      | Disables the weekdays, accept numbers 0-6                                       |
-|    disableDates     |  Array  |      `[]`      | Allows to disable specific dates, accepts date obects                           |
-|      markDates      |  Array  |      `[]`      | Allows to mark spcific dates, accepts date obects                               |
+|        Option         |  Type   |    Default     | Description                                                                     |
+| :-------------------: | :-----: | :------------: | ------------------------------------------------------------------------------- |
+|         `el`          | String  |     `null`     | The id of the input to be linked                                                |
+|     `dateFormat`      | String  | `DD-MMM-YYYY`  | The date format to be applied to the returned date                              |
+|      `bodyType`       | String  |    `modal`     | Body type of the calendar, currently suports only 2 types: 'modal' and 'inline' |
+| `showCalendarDisplay` | Boolean |     `true`     | Shows or hide the calendar display, works only on desktop                       |
+|   `customWeekDays`    |  Array  |  EN Weekdays   | The datepicker uses custom weekdays if they are present                         |
+|    `customMonths`     |  Array  | EN Month names | The datepicker uses custom month names if they are pressent                     |
+|    `firstWeekday`     | Number  |      `0 `      | Sets the firs weekday, accepts numbers 0 to 6                                   |
+|    `selectedDate`     |  Date   |     `null`     | Sets the default picked date                                                    |
+|   `disableWeekends`   | Boolean |    `false`     | Disables weekends                                                               |
+|   `disableWeekDays`   |  Array  |      `[]`      | Disables the weekdays, accept numbers 0-6                                       |
+|    `disableDates`     |  Array  |      `[]`      | Allows to disable specific dates, accepts date objects                          |
+|      `markDates`      |  Array  |      `[]`      | Allows to mark specific dates, accepts date objects                             |
 
-#### el
+### el
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -32,7 +32,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### dateFormat
+### dateFormat
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -46,7 +46,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### bodyType
+### bodyType
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -60,7 +60,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### showCalendarDisplay
+### showCalendarDisplay
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -74,7 +74,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### customWeekDays
+### customWeekDays
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -88,7 +88,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### customMonths
+### customMonths
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -102,7 +102,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### firstWeekday
+### firstWeekday
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -116,7 +116,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### selectedDate
+### selectedDate
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -130,7 +130,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### disableWeekends
+### disableWeekends
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -144,7 +144,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### disableWeekDays
+### disableWeekDays
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -158,7 +158,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### disableDates
+### disableDates
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -172,7 +172,7 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
-#### markDates
+### markDates
 
 ```js
 const datepicker = MCDatepicker.create({

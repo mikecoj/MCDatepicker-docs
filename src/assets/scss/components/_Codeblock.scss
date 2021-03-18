@@ -8,10 +8,10 @@
 	background-color: #173549;
 	border-radius: 10px;
 	text-align: left;
-	@include for-desktop {
-		margin: 2em 0;
-		padding: 2em;
-	}
+	// @include for-desktop {
+	// 	margin: 2em 0;
+	// 	padding: 2em;
+	// }
 
 	/* Works on Firefox */
 	& {

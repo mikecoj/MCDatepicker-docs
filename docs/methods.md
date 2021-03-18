@@ -6,7 +6,7 @@ sidebar_label: Methods
 
 :::info
 
-Here all methods of the `MCDapepicker` are described.
+Here all methods of the `MCDatepicker` are described.
 
 :::
 

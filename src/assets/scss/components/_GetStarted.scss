@@ -4,6 +4,15 @@
 	// background-color: #008e84;
 	// color: rgb(235, 235, 235);
 	color: $text-color-white;
+	&__block {
+		justify-content: space-between;
+		.m-col {
+			width: 48%;
+			* {
+				text-align: left;
+			}
+		}
+	}
 }
 
 .primary-content {

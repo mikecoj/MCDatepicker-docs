@@ -4,15 +4,18 @@ title: Instalation
 sidebar_label: Instalation
 ---
 
-#### Via NPM
+#### Installing a `mc-datepicker` module
+
+MCDatepicker is delivered primarily via npm.
+Just install the package and start using it.
 
 ```
 npm install mc-datepicker --save
 ```
 
-#### Using CDN
+#### Non-module environments
 
-Include CDN links in the `<head>`...
+If you are using a non-module environment, you can simply add CDN links in the `<head>...`
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.css" rel="stylesheet" />

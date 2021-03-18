@@ -3,7 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import Layout from '@theme/Layout';
 
 const htmlCode = `<!-- HTML -->
-<div class="form-field card">
+<div class="form-field">
   <label class="form-field__label">Datepicker Demo</label>
   <input id="datepicker" type="text">
 </div>`;
@@ -16,7 +16,7 @@ const datePicker = MCDatepicker.create({
 
 const Usage = () => {
 	return (
-  		<Layout title={'Usage'}>
+		<Layout title={'Usage'}>
 			<main className="usage flex-center page">
 				<section className="usage__content m-container">
 					<div className="usage__text">
@@ -30,14 +30,16 @@ const Usage = () => {
 							</SyntaxHighlighter>
 						</div>
 						<div className="m-col">
-							{<SyntaxHighlighter language="javascript" useInlineStyles={false}>
-								{jsCode}
-							</SyntaxHighlighter>}
+							{
+								<SyntaxHighlighter language="javascript" useInlineStyles={false}>
+									{jsCode}
+								</SyntaxHighlighter>
+							}
 						</div>
 					</div>
 				</section>
 			</main>
-    </Layout>
+		</Layout>
 	);
 };
 
