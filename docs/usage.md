@@ -4,3 +4,35 @@ title: Usage
 sidebar_label: Usage
 ---
 
+```html
+<input id="datepicker" type="text" />
+```
+
+If you’re using a bundler, e.g. webpack, you’ll need to import ` MCDatepicker`
+
+```javascript
+import MCDatepicker from 'mc-datepicker';
+```
+
+1. Create a new instance, and attach it to an input field
+
+```javascript
+const picker = MCDatepicker.create({
+	el: '#datepicker'
+});
+```
+
+2. Customize the datepicker by adding more options
+
+```javascript
+const picker = MCDatepicker.create({
+	el: '#datepicker',
+	disableWeekends: true
+});
+```
+
+3. Use methods to manipulate the datepicker
+
+```javascript
+btn.onclick = () => picker.open();
+```

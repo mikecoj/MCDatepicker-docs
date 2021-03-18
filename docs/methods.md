@@ -14,23 +14,23 @@ Here all methods of the `MCDapepicker` are described.
 
 Creates a new [State](../state/Introduction.md),
 which gets automatically bound to the [Agile Instance](../agile-instance/Introduction.md) it was created from.
+
 ```js
 const State = App.createState('jeff', {
-    key: 'dummyState',
-})
+	key: 'dummyState'
+});
 ```
 
 ### Props
 
-| Prop           | Type                                                                       | Default   | Description                                           | Required |
-|----------------|----------------------------------------------------------------------------|-----------|-------------------------------------------------------|----------|
-| `initialValue` | ValueType = any                                                            | undefined | Initial Value of State                                | Yes      |
-| `config`       | [StateConfigInterface](../../../../Interfaces.md#stateconfig)              | {}        | Configuration                                         | No       |
+| Prop           | Type                                                          | Default   | Description            | Required |
+| -------------- | ------------------------------------------------------------- | --------- | ---------------------- | -------- |
+| `initialValue` | ValueType = any                                               | undefined | Initial Value of State | Yes      |
+| `config`       | [StateConfigInterface](../../../../Interfaces.md#stateconfig) | {}        | Configuration          | No       |
 
 ### Return
+
 Returns a fresh [State](../state/Introduction.md).
-
-
 
 <br />
 
@@ -38,12 +38,7 @@ Returns a fresh [State](../state/Introduction.md).
 
 <br />
 
-
 ## `open()`
-
-### Props
-
-### Return
 
 <br />
 
@@ -53,10 +48,6 @@ Returns a fresh [State](../state/Introduction.md).
 
 ## `close()`
 
-### Props
-
-### Return
-
 <br />
 
 ---
@@ -64,10 +55,6 @@ Returns a fresh [State](../state/Introduction.md).
 <br />
 
 ## `reset()`
-
-### Props
-
-### Return
 
 <br />
 
@@ -77,10 +64,6 @@ Returns a fresh [State](../state/Introduction.md).
 
 ## `destroy()`
 
-### Props
-
-### Return
-
 <br />
 
 ---
@@ -88,8 +71,6 @@ Returns a fresh [State](../state/Introduction.md).
 <br />
 
 ## `getDay()`
-
-### Props
 
 ### Return
 
@@ -101,8 +82,6 @@ Returns a fresh [State](../state/Introduction.md).
 
 ## `getDate()`
 
-### Props
-
 ### Return
 
 <br />
@@ -112,8 +91,6 @@ Returns a fresh [State](../state/Introduction.md).
 <br />
 
 ## `getMonth()`
-
-### Props
 
 ### Return
 
@@ -125,8 +102,6 @@ Returns a fresh [State](../state/Introduction.md).
 
 ## `getYear()`
 
-### Props
-
 ### Return
 
 <br />
@@ -137,8 +112,6 @@ Returns a fresh [State](../state/Introduction.md).
 
 ## `getFullDate()`
 
-### Props
-
 ### Return
 
 <br />
@@ -148,20 +121,6 @@ Returns a fresh [State](../state/Introduction.md).
 <br />
 
 ## `getFormatedDate()`
-
-### Props
-
-### Return
-
-<br />
-
----
-
-<br />
-
-## `getEvents()`
-
-### Props
 
 ### Return
 
