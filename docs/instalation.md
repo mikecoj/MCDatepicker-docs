@@ -1,7 +1,7 @@
 ---
-id: instalation
-title: Instalation
-sidebar_label: Instalation
+id: installation
+title: Installation
+sidebar_label: Installation
 ---
 
 #### Installing a `mc-datepicker` module

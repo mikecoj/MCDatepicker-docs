@@ -169,7 +169,7 @@ datepicker.destroy();
 
 ### `getDay()`
 
-Returns the index of the weekday if a date was picked otherwise it returns `undefined`.
+Returns the index of the weekday if a date was picked otherwise returns `null`.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -188,7 +188,7 @@ const weekdayIndex = datepicker.getDay();
 
 ### `getDate()`
 
-Returns the day of the month if a date was picked otherwise it returns `undefined`.
+Returns the day of the month if a date was picked otherwise returns `null`.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -207,7 +207,7 @@ const date = datepicker.getDate();
 
 ### `getMonth()`
 
-Returns the index of the month if a date was picked otherwise it returns `undefined`.
+Returns the index of the month if a date was picked otherwise returns `null`.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -226,7 +226,7 @@ const month = datepicker.getMonth();
 
 ### `getYear()`
 
-Returns the year if a date was picked otherwise it returns `undefined`.
+Returns the year if a date was picked otherwise returns `null`.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -245,7 +245,7 @@ const month = datepicker.getYear();
 
 ### `getFullDate()`
 
-Returns the date object if a date was picked otherwise it returns `null`.
+Returns the date object if a date was picked otherwise returns `null`.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -284,14 +284,14 @@ const formatedDate = datepicker.getFormatedDate();
 ### `markDatesCustom()`
 
 Pushes the provided callback to an array.
-When the calendar table is updated it passes each date of the calendar table through the callback array and marks the date if at least one callback returns true.
+When the calendar table is updated it passes each date of the calendar table through the callback array and marks the date if at least one callback returns `true`.
 
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#example'
 });
 
-const formatedDate = datepicker.markDatesCustom((date) => date.getDate() == 15);
+datepicker.markDatesCustom((date) => date.getDate() == 15);
 ```
 
 #### callback props
