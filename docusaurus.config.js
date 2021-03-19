@@ -27,7 +27,7 @@ module.exports = {
           label: 'Docs',
           position: 'right',
         },
-        {to: '/try-online', label: 'Try Online', position: 'right'},
+        // {to: '/try-online', label: 'Try Online', position: 'right'},
         {
           href: 'https://github.com/mikecoj/MCDatepicker',
           label: 'GitHub',

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import TabItem from '@theme/TabItem';
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import DownloadButton from '../../Components/DownloadButton';
 
 const installation = `<head>
 <!-- ... -->
@@ -17,14 +17,14 @@ const GetStarted = () => {
 				<section className="primary-content m-container">
 					<div className="primary-content__block">
 						<h1>Install via NPM</h1>
-						<p>Install NPM module using npm cli</p>
+						<p>Install NPM module using npm CLI</p>
 						<SyntaxHighlighter language="xml" useInlineStyles={false}>
 							{`npm install mc-datepicker --save`}
 						</SyntaxHighlighter>
 					</div>
 					<div className="primary-content__block">
 						<h1>CDN Links</h1>
-						<p>Using hosted files is probably the easiest way to get started using CMDatepicker.js, you simply need to include the CDN links to your page.</p>
+						<p>Using hosted files is probably the easiest way to get started using MCDatepicker, you simply need to include the CDN links to your HTML.</p>
 
 						{/* <Codeblock lang="html" code={installation} /> */}
 						<SyntaxHighlighter language="xml" useInlineStyles={false}>
@@ -34,6 +34,7 @@ const GetStarted = () => {
 					<div className="primary-content__block">
 						<h1>Download and Use</h1>
 						<p>Manage dependencies by "directly downloading" them and placing them into your source code.</p>
+						<DownloadButton />
 					</div>
 				</section>
 			</main>

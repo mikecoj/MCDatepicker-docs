@@ -1,0 +1,35 @@
+.table-of-contents {
+	&__link {
+		&--active,
+		&:hover {
+			&,
+			code {
+				color: $calendar-theme-color;
+			}
+		}
+	}
+}
+
+.main-docs-wrapper {
+	background-color: $main-bg-color;
+	&,
+	code {
+		color: #55687b;
+	}
+
+	.alert {
+		background-color: $calendar-theme-color;
+		border-color: $calendar-theme-color;
+	}
+}
+
+.menu {
+	&__link {
+		&--active {
+			&,
+			&:hover {
+				color: $calendar-theme-color;
+			}
+		}
+	}
+}

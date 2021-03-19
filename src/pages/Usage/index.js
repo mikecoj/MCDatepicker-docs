@@ -21,7 +21,9 @@ const Usage = () => {
 				<section className="usage__content m-container">
 					<div className="usage__text">
 						<h1>Usage</h1>
-						<p>Create a new calendar instance using the following method:</p>
+						<p>
+							Create a new calendar instance using <code>create()</code> method, and add the options you need!
+						</p>
 					</div>
 					<div className="usage__block m-row">
 						<div className="m-col">

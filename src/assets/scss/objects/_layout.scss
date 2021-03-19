@@ -24,11 +24,11 @@
 }
 
 .main-wrapper {
+	background-color: #f5f5f5;
 	// margin-top: 4.2rem;
-	
 }
 
 .pagination-nav__link:hover {
-    border-color: $calendar-theme-color;;
-    text-decoration: none;
+	border-color: $calendar-theme-color;
+	text-decoration: none;
 }
