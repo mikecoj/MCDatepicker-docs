@@ -4,4 +4,6 @@ title: Design Principles
 sidebar_label: Design Principles
 ---
 
-design-principles
+## Single DOM node
+
+## Multiple instances

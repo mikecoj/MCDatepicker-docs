@@ -7,6 +7,17 @@ slug: /
 
 MCDatepicker It's a beautiful calendar component written in Vanilla JavaScript.
 
-His responsive design looks great either on desktop or mobile devices.
+It has a fully responsive design build using mobile first approach.
+The package is written as ECMAScript modules and delivered via [npm](https://www.npmjs.com/). You can easily integrate the package in your project, even if you are using a library.
 
-Pick a date with Vanilla JavaScript! MCDatepicker It's a beautiful calendar component, that looks great either on desktop or mobile devices. It has no dependencies and it's highly customizable! Just add the options you need and you're ready to go!!
+Before starting using this package, make sure that you have added a [SASS loader](https://webpack.js.org/loaders/sass-loader/) to your module bundler.
+
+If you have a non-module environment,the package also includes pre-built js/css files so you can use it directly on browser.
+
+### Features
+
+- 2 Modes: (modal, inline)
+- Custom weekday and month names
+- Disable weekdays and specific dates
+- Mark specific dates
+- Fully responsive/ Mobile friendly
