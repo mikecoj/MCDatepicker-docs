@@ -14,11 +14,9 @@ const Home = () => {
 			<main className="home flex-center page">
 				<section className="m-hero m-container">
 					<div className="m-hero__text">
-						<h1>MCDatepicker.js</h1>
+						<h1>MCDatepicker</h1>
 						<h3>Highly customizable Vanilla JS Datepicker with zero dependencies.</h3>
-						<p>
-							Pick a date with Vanilla JavaScript! MCDatepicker It's a beautiful calendar component, that looks great eather on desctop or mobile devices. It
-							has no dependencies and it's highly customizable! Just add the options you need and boom, you're ready to go!!
+						<p>Pick a date with Vanilla JavaScript! MCDatepicker It's a beautiful calendar component, that looks great either on desktop or mobile devices. It has no dependencies and it's highly customizable! Just add the options you need and you're ready to go!!
 						</p>
 						<div>
 							<DownloadButton />
