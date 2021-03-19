@@ -16,7 +16,7 @@ If you’re using a bundler, e.g. webpack, you’ll need to add a [SASS loader](
 import MCDatepicker from 'mc-datepicker';
 ```
 
-1. Create a new instance, and attach it to an input tag
+#### 1. Create a new instance, and attach it to an input tag
 
 ```javascript
 const picker = MCDatepicker.create({
@@ -24,7 +24,7 @@ const picker = MCDatepicker.create({
 });
 ```
 
-2. Customize the datepicker by adding more options
+#### 2. Customize the datepicker by adding more options
 
 ```javascript
 const picker = MCDatepicker.create({
@@ -33,7 +33,7 @@ const picker = MCDatepicker.create({
 });
 ```
 
-3. Use methods to manipulate the datepicker
+#### 3. Use methods to manipulate the datepicker
 
 ```javascript
 btn.onclick = () => picker.open();

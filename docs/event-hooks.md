@@ -4,9 +4,15 @@ title: Event Hooks
 sidebar_label: Event Hooks
 ---
 
+:::info
+
+All methods listed below can be used multiple times.
+
+:::
+
 ## `onOpen()`
 
-### Props
+Subscribes the provided callback to an event that gets triggered each time the calendar shows up.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -24,7 +30,7 @@ datepicker.onOpen(() => console.log('The Datepicker is openned'));
 
 ## `onClose()`
 
-### Props
+Subscribes the provided callback to an event that gets triggered when the calendar is closed.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -42,7 +48,7 @@ datepicker.onClose(() => console.log('The Datepicker is closed'));
 
 ## `onSelect()`
 
-### Props
+Subscribes the provided callback to an event that gets triggered when the calendar's OK button is clicked.
 
 ```js
 const datepicker = MCDatepicker.create({
@@ -52,6 +58,12 @@ const datepicker = MCDatepicker.create({
 datepicker.onSelect((date) => console.log('Selected date: ' + date));
 ```
 
+#### callback props
+
+| Prop | Type   | Required |
+| ---- | ------ | -------- |
+| date | Object | No       |
+
 <br />
 
 ---
@@ -60,14 +72,14 @@ datepicker.onSelect((date) => console.log('Selected date: ' + date));
 
 ## `onMonthChange()`
 
-### Props
+Subscribes the provided callback to an event that gets triggered when the month is changed.
 
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#datepicker'
 });
 
-datepicker.onMonthChange((month) => console.log('Month changed, new month: ' + month));
+datepicker.onMonthChange(() => console.log('The month has been changed'));
 ```
 
 <br />
@@ -78,12 +90,12 @@ datepicker.onMonthChange((month) => console.log('Month changed, new month: ' + m
 
 ## `onYearChange()`
 
-### Props
+Subscribes the provided callback to an event that gets triggered when the year is changed.
 
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#datepicker'
 });
 
-datepicker.onYearChange((year) => console.log('Year changed, new year: ' + year));
+datepicker.onYearChange(() => console.log('The year has been changed'));
 ```

@@ -18,10 +18,24 @@
 	}
 
 	.alert {
-		background-color: $calendar-theme-color;
-		border-color: $calendar-theme-color;
+		&--info {
+			background-color: $calendar-theme-color;
+			border-color: $calendar-theme-color;
+		}
+		&--secondary {
+			color: #55687b;
+			// background-color: #cbd3e0;
+			background-color: #dfe5e5;
+			.admonition-icon{ 
+				svg {
+					fill: #55687b;
+				}
+			} 
+		}
 	}
 }
+
+	
 
 .menu {
 	&__link {
@@ -33,3 +47,4 @@
 		}
 	}
 }
+
