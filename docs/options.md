@@ -3,20 +3,20 @@ id: configuration
 title: Configuration
 ---
 
-|                    Option                     |  Type   |    Default     | Description                                   |
-| :-------------------------------------------: | :-----: | :------------: | --------------------------------------------- |
-|                  [`el`](#el)                  | String  |     `null`     | Sets the ID of the instance's linked element. |
-|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.         |
-|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                       |
-| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.          |
-|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.                |
-|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.             |
-|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.           |
-|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.                 |
-|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                            |
-|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.           |
-|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific days.                       |
-|           [`markDates`](#markdates)           |  Array  |      `[]`      | Marc specific dates.                          |
+|                    Option                     |  Type   |    Default     | Description                              |
+| :-------------------------------------------: | :-----: | :------------: | ---------------------------------------- |
+|                  [`el`](#el)                  | String  |     `null`     | The ID of the instance's linked element. |
+|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.    |
+|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                  |
+| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.     |
+|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.           |
+|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.        |
+|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.      |
+|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.            |
+|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                       |
+|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.      |
+|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                 |
+|           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                     |
 
 ### el
 

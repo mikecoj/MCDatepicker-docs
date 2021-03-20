@@ -10,7 +10,7 @@ MCDatepicker creates a single DOM node and appends the calendar template to it. 
 
 The calendar is rendered when the very first instance gets created .
 
-Wen an instance gets active, MCDatepicker updates the calendar node based on the instance's options.
+Wen an instance gets active, MCDatepicker updates the calendar based on the instance's options.
 
 ## Multiple instances
 
