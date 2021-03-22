@@ -13,6 +13,8 @@ title: Configuration
 |        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.        |
 |        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.      |
 |        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.            |
+|             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.            |
+|             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.            |
 |     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                       |
 |     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.      |
 |        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                 |
@@ -46,6 +48,7 @@ This option is used to specify the format of the returned date. By default is se
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	dateFormat: 'dddd, dd-mmmm-yy'
 });
 ```
@@ -62,6 +65,7 @@ This option sets the calendar UI type, currently, it supports only 2 types: `mod
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	bodyType: 'inline'
 });
 ```
@@ -84,6 +88,7 @@ Use this option to show or hide the calendar display in the `modal` mode.
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	showCalendarDisplay: 'false'
 });
 ```
@@ -106,6 +111,7 @@ Add an array of custom weekdays, they will be used to display weekdays when a da
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	customWeekDays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 });
 ```
@@ -128,6 +134,7 @@ Similar to `customWeekDays` this option will be used to display the month of the
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	customMonths: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 });
 ```
@@ -144,6 +151,7 @@ If you are living in Europe, you probably need the calendar to start on Monday. 
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	firstWeekday: 1
 });
 ```
@@ -160,7 +168,42 @@ Use this option to set a picked date when the calendar is rendered for the first
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	selectedDate: new Date()
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### minDate
+
+Use this option to set the smallest selectable date. By default, the option is set to null.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	minDate: new Date(2020, 10, 25)
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### maxDate
+
+Use this option to set the biggest selectable date. By default, the option is set to null.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	selectedDate: new Date(2021, 5, 15)
 });
 ```
 
@@ -176,6 +219,7 @@ By enabling this option, you are disabling Saturday and Sunday so they cannot be
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	disableWeekends: true
 });
 ```
@@ -193,6 +237,7 @@ You need to add an array of indexes that represents the weekdays you want to dis
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	disableWeekDays: [2, 3]
 });
 ```
@@ -209,6 +254,7 @@ If you want to disable a specific date, this option allows you to disable any da
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	disableDates: [new Date(2021, 5, 6), new Date(2021, 4, 15)]
 });
 ```
@@ -225,6 +271,7 @@ This option allows you to mark custom dates. Accepts an array of dates objects.
 
 ```js
 const datepicker = MCDatepicker.create({
+	el: '#example',
 	markDates: [new Date(2021, 4, 4), new Date(2021, 6, 11)]
 });
 ```
