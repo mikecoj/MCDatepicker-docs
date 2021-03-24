@@ -10,7 +10,7 @@ MCDatepicker is delivered primarily via npm.
 Just install the package and start using it.
 
 ```
-npm install mc-datepicker --save
+npm i mc-datepicker
 ```
 
 #### Non-module environments

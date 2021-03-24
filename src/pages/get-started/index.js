@@ -19,7 +19,7 @@ const GetStarted = () => {
 						<h1>Install via NPM</h1>
 						<p>Install NPM module using npm CLI</p>
 						<SyntaxHighlighter language="xml" useInlineStyles={false}>
-							{`npm install mc-datepicker --save`}
+							{`npm i mc-datepicker`}
 						</SyntaxHighlighter>
 					</div>
 					<div className="primary-content__block">

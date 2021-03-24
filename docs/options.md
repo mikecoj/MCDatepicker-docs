@@ -203,7 +203,7 @@ Use this option to set the biggest selectable date. By default, the option is se
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#example',
-	selectedDate: new Date(2021, 5, 15)
+	maxDate: new Date(2021, 5, 15)
 });
 ```
 
