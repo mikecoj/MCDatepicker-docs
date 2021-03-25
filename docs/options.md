@@ -70,12 +70,6 @@ const datepicker = MCDatepicker.create({
 });
 ```
 
-:::note
-
-`inline` mode works only on desktop!
-
-:::
-
 <br />
 
 ---
