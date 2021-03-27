@@ -3,22 +3,26 @@ id: configuration
 title: Configuration
 ---
 
-|                    Option                     |  Type   |    Default     | Description                              |
-| :-------------------------------------------: | :-----: | :------------: | ---------------------------------------- |
-|                  [`el`](#el)                  | String  |     `null`     | The ID of the instance's linked element. |
-|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.    |
-|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                  |
-| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.     |
-|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.           |
-|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.        |
-|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.      |
-|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.            |
-|             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.            |
-|             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.            |
-|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                       |
-|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.      |
-|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                 |
-|           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                     |
+|                    Option                     |  Type   |    Default     | Description                                 |
+| :-------------------------------------------: | :-----: | :------------: | ------------------------------------------- |
+|                  [`el`](#el)                  | String  |     `null`     | The ID of the instance's linked element.    |
+|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.       |
+|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                     |
+| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.        |
+|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.              |
+|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.           |
+|         [`customOkBTN`](#customokbtn)         | String  |      `OK`      | Sets custom OK button label.                |
+|      [`customClearBTN`](#customclearbtn)      | String  |    `Clear`     | Sets custom Clear button label.             |
+|     [`customCancelBTN`](#customcancelbtn)     | String  |    `CANCEL`    | Sets custom CANCEL button label.            |
+|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.         |
+|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.               |
+|             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.               |
+|             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.               |
+|        [`jumpToMinMax`](#jumptominmax)        | Boolean |     `true`     | Jumps to min \| max dates using year arrows |
+|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                          |
+|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.         |
+|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                    |
+|           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                        |
 
 ### el
 
@@ -139,6 +143,57 @@ const datepicker = MCDatepicker.create({
 
 <br />
 
+### customOkBTN
+
+Use this option to set a custom label of the OK button
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	customOkBTN: 'ok'
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### customClearBTN
+
+Use this option to set a custom label of the Clear button
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	customClearBTN: 'Șterge'
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### customCancelBTN
+
+Use this option to set a custom label of the CANCEL button
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	customCancelBTN: 'Anulează'
+});
+```
+
+<br />
+
+---
+
+<br />
+
 ### firstWeekday
 
 If you are living in Europe, you probably need the calendar to start on Monday. This option allows you to set the first weekday of the calendar table. Accepts numbers from 0 to 6, where 0 represents Sunday.
@@ -198,6 +253,25 @@ Use this option to set the biggest selectable date. By default, the option is se
 const datepicker = MCDatepicker.create({
 	el: '#example',
 	maxDate: new Date(2021, 5, 15)
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### jumpToMinMax
+
+Jumps to min \| max dates if the prev \| next year is out of min \| max dates
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	minDate: new Date(2020, 10, 25),
+	maxDate: new Date(2021, 5, 15),
+	jumpToMinMax: 'false'
 });
 ```
 
