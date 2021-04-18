@@ -35,4 +35,4 @@ The Formatter is not case-sensitive and accepts either lower-case or upper-case 
 |      (U+002D)       |   `-`    | Hyphen-minus         | dd-mm-yy         |
 |      (U+002C)       |   `,`    | Comma                | dd,mm,yy         |
 |      (U+0020)       |   ` `    | Space                | dd mm yy         |
-| (U+002D) + (U+0020) | ` ,` ` ` | Hyphen-minus + Space | dddd, dd, mm, yy |
+| (U+002C) + (U+0020) | ` ,` ` ` | Comma + Space        | dddd, dd, mm, yy |
