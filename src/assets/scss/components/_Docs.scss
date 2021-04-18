@@ -14,7 +14,8 @@
 	background-color: $main-bg-color;
 	&,
 	code {
-		color: #55687b;
+// 		color: #55687b;
+		color: #3e4d5c;
 	}
 
 	.alert {
@@ -23,12 +24,14 @@
 			border-color: $calendar-theme-color;
 		}
 		&--secondary {
-			color: #55687b;
+			// color: #55687b;
+			color: #3e4d5c;
 			// background-color: #cbd3e0;
 			background-color: #dfe5e5;
 			.admonition-icon{ 
 				svg {
-					fill: #55687b;
+					// fill: #55687b;
+					fill: #3e4d5c;
 				}
 			} 
 		}
