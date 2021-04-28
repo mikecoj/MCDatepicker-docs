@@ -46,6 +46,24 @@ datepicker.onClose(() => console.log('The Datepicker is closed'));
 
 <br />
 
+## `onCancel()`
+
+Subscribes the provided callback to an event that gets triggered when the calendar is closed by clicking the cancel button.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#datepicker'
+});
+
+datepicker.onCancel(() => console.log('The Datepicker is closed'));
+```
+
+<br />
+
+---
+
+<br />
+
 ## `onSelect()`
 
 Subscribes the provided callback to an event that gets triggered when the calendar's OK button is clicked.
