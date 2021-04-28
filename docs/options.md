@@ -19,9 +19,14 @@ title: Configuration
 |             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.               |
 |             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.               |
 |        [`jumpToMinMax`](#jumptominmax)        | Boolean |     `true`     | Jumps to min \| max dates using year arrows |
+|    [`jumpOverDisabled`](#jumpoverdisabled)    | Boolean |     `true`     | Jumps over the disabled months and years.   |
 |     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                          |
 |     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.         |
 |        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                    |
+|       [`disableMonths`](#disablemonths)       |  Array  |      `[]`      | Disables specific months.                   |
+|        [`disableYears`](#disableyears)        |  Array  |      `[]`      | Disables specific years.                    |
+|       [`allowedMonths`](#allowedmonths)       |  Array  |      `[]`      | Allows specific months only.                |
+|        [`allowedYears`](#allowedyears)        |  Array  |      `[]`      | Allows specific years only.                 |
 |           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                        |
 
 ### el
@@ -34,9 +39,9 @@ const datepicker = MCDatepicker.create({
 });
 ```
 
-:::important
+:::note
 
-This option is required
+Starting with version v0.4.0 this option is not required
 
 :::
 
@@ -271,7 +276,28 @@ const datepicker = MCDatepicker.create({
 	el: '#example',
 	minDate: new Date(2020, 10, 25),
 	maxDate: new Date(2021, 5, 15),
-	jumpToMinMax: 'false'
+	jumpToMinMax: false
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### jumpOverDisabled
+
+Jumps over the disabled months and years.
+
+When this option is enabled, the calendar jumps to the ( next \| prev ) active month and year if the (next \| prev) month or year is disabled.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	disableMonths: [0, 5, 7],
+	allowedYears: [2018, 2019, 2021, 2025],
+	jumpOverDisabled: true
 });
 ```
 
@@ -326,6 +352,86 @@ const datepicker = MCDatepicker.create({
 	disableDates: [new Date(2021, 5, 6), new Date(2021, 4, 15)]
 });
 ```
+
+<br />
+
+---
+
+<br />
+
+### disableMonths
+
+If you want to disable a specific month, this option allows you to disable any month you want. Accepts an array of numbers.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	disableMonths: [0, 5, 7]
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### disableYears
+
+If you want to disable a specific years, this option allows you to disable the specified years. Accepts an array of numbers.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	disableYears: [2020, 2019, 2025]
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### allowedMonths
+
+If you want to allow the user to select specific months only, this option allows you to do so. Accepts an array of numbers.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	allowedMonths: [2, 4, 5, 7]
+});
+```
+
+:::important
+
+This option overrides the rules of [`disableMonths`](#disablemonths) option.
+
+:::
+
+<br />
+
+---
+
+<br />
+
+### allowedYears
+
+If you want to allow the user to select specific years only, this option allows you to do so. Accepts an array of numbers.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	allowedYears: [2018, 2019, 2021, 2025]
+});
+```
+
+:::important
+
+This option overrides the rules of [`disableYears`](#disableyears) option.
+
+:::
 
 <br />
 
