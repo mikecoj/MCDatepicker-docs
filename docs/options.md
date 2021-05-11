@@ -3,31 +3,33 @@ id: configuration
 title: Configuration
 ---
 
-|                    Option                     |  Type   |    Default     | Description                                 |
-| :-------------------------------------------: | :-----: | :------------: | ------------------------------------------- |
-|                  [`el`](#el)                  | String  |     `null`     | The ID of the instance's linked element.    |
-|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.       |
-|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                     |
-| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.        |
-|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.              |
-|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.           |
-|         [`customOkBTN`](#customokbtn)         | String  |      `OK`      | Sets custom OK button label.                |
-|      [`customClearBTN`](#customclearbtn)      | String  |    `Clear`     | Sets custom Clear button label.             |
-|     [`customCancelBTN`](#customcancelbtn)     | String  |    `CANCEL`    | Sets custom CANCEL button label.            |
-|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.         |
-|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.               |
-|             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.               |
-|             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.               |
-|        [`jumpToMinMax`](#jumptominmax)        | Boolean |     `true`     | Jumps to min \| max dates using year arrows |
-|    [`jumpOverDisabled`](#jumpoverdisabled)    | Boolean |     `true`     | Jumps over the disabled months and years.   |
-|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                          |
-|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.         |
-|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                    |
-|       [`disableMonths`](#disablemonths)       |  Array  |      `[]`      | Disables specific months.                   |
-|        [`disableYears`](#disableyears)        |  Array  |      `[]`      | Disables specific years.                    |
-|       [`allowedMonths`](#allowedmonths)       |  Array  |      `[]`      | Allows specific months only.                |
-|        [`allowedYears`](#allowedyears)        |  Array  |      `[]`      | Allows specific years only.                 |
-|           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                        |
+|                    Option                     |  Type   |    Default     | Description                                  |
+| :-------------------------------------------: | :-----: | :------------: | -------------------------------------------- |
+|                  [`el`](#el)                  | String  |     `null`     | The ID of the instance's linked element.     |
+|          [`dateFormat`](#dateformat)          | String  | `DD-MMM-YYYY`  | Sets the format of the returned date.        |
+|            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                      |
+|           [`autoClose`](#autoclose)           | Boolean |    `false`     | Closes the calendar when a date is selected. |
+|     [`closeOndblclick`](#closeondblclick)     | Boolean |     `true`     | Closes the calendar on double click.         |
+| [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.         |
+|      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.               |
+|        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.            |
+|         [`customOkBTN`](#customokbtn)         | String  |      `OK`      | Sets custom OK button label.                 |
+|      [`customClearBTN`](#customclearbtn)      | String  |    `Clear`     | Sets custom Clear button label.              |
+|     [`customCancelBTN`](#customcancelbtn)     | String  |    `CANCEL`    | Sets custom CANCEL button label.             |
+|        [`firstWeekday`](#firstweekday)        | Number  |      `0 `      | Sets first weekday of the calendar.          |
+|        [`selectedDate`](#selecteddate)        |  Date   |     `null`     | Sets the default picked date.                |
+|             [`minDate`](#mindate)             |  Date   |     `null`     | Sets the min selectable date.                |
+|             [`maxDate`](#maxdate)             |  Date   |     `null`     | Sets the max selectable date.                |
+|        [`jumpToMinMax`](#jumptominmax)        | Boolean |     `true`     | Jumps to min \| max dates using year arrows  |
+|    [`jumpOverDisabled`](#jumpoverdisabled)    | Boolean |     `true`     | Jumps over the disabled months and years.    |
+|     [`disableWeekends`](#disableweekends)     | Boolean |    `false`     | Disables weekends.                           |
+|     [`disableWeekDays`](#disableweekdays)     |  Array  |      `[]`      | Disables specific days of the week.          |
+|        [`disableDates`](#disabledates)        |  Array  |      `[]`      | Disables specific dates.                     |
+|       [`disableMonths`](#disablemonths)       |  Array  |      `[]`      | Disables specific months.                    |
+|        [`disableYears`](#disableyears)        |  Array  |      `[]`      | Disables specific years.                     |
+|       [`allowedMonths`](#allowedmonths)       |  Array  |      `[]`      | Allows specific months only.                 |
+|        [`allowedYears`](#allowedyears)        |  Array  |      `[]`      | Allows specific years only.                  |
+|           [`markDates`](#markdates)           |  Array  |      `[]`      | Mark specific dates.                         |
 
 ### el
 
@@ -76,6 +78,40 @@ This option sets the calendar UI type, currently, it supports only 2 types: `mod
 const datepicker = MCDatepicker.create({
 	el: '#example',
 	bodyType: 'inline'
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### autoClose
+
+This option closes the calendar automatically when an active date is selected.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	autoClose: true
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### closeOndblclick
+
+This option closes the calendar automatically by double-clicking on an active date. By default this option is set to `true`.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	closeOndblclick: false
 });
 ```
 

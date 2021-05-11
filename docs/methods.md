@@ -299,3 +299,124 @@ datepicker.markDatesCustom((date) => date.getDate() == 15);
 | Prop | Type   | Required |
 | ---- | ------ | -------- |
 | date | Object | No       |
+
+<br />
+
+---
+
+<br />
+
+### `setFullDate()`
+
+This method sets the instance's picket date and updates the linked element's value if the instance has one.
+
+If the instance is active the calendar updates its content based on the new provided date.
+
+```js
+const setFullDateBtn = document.querySelector('#setFullDateBtn');
+
+const datepicker = MCDatepicker.create({
+	el: '#example'
+});
+
+setFullDateBtn.onclick = () => {
+	datepicker.setFullDate(new Date(2021, 1, 1));
+};
+```
+
+| Prop | Type | Required |
+| ---- | ---- | -------- |
+| date | Date | Yes      |
+
+<br />
+
+---
+
+<br />
+
+### `setDate()`
+
+This method changes the day of the month of the instance's picket date and updates the linked element's value if the instance has one.
+If the picked date is `null` MCDatepicker creates a new date and uses it as a new picked date.
+
+If the instance is active, the calendar updates its content based on the modified picked date.
+
+```js
+const setDateBtn = document.querySelector('#setDateBtn');
+
+const datepicker = MCDatepicker.create({
+	el: '#example'
+});
+
+setDateBtn.onclick = () => {
+	datepicker.setDate(12);
+};
+```
+
+| Prop | Type   | Required |
+| ---- | ------ | -------- |
+| date | Number | Yes      |
+
+<br />
+
+---
+
+<br />
+
+### `setMonth()`
+
+This method sets the month for the instance's picked date and updates the linked element's value if the instance has one.
+If the picked date is `null` MCDatepicker creates a new date and uses it as a new picked date.
+
+If the instance is active, the calendar updates its content based on the modified picked date.
+
+```js
+const setMonthBtn = document.querySelector('#setMonthBtn');
+
+const datepicker = MCDatepicker.create({
+	el: '#example'
+});
+
+setMonthBtn.onclick = () => {
+	datepicker.setMonth(4);
+};
+```
+
+| Prop  | Type   | Required |
+| ----- | ------ | -------- |
+| Month | Number | Yes      |
+
+<br />
+
+---
+
+<br />
+
+### `setYear()`
+
+This method sets the year for the instance's picked date and updates the linked element's value if the instance has one.
+If the picked date is `null` MCDatepicker creates a new date and uses it as a new picked date.
+
+If the instance is active, the calendar updates its content based on the modified picked date.
+
+```js
+const setYearBtn = document.querySelector('#setYearBtn');
+
+const datepicker = MCDatepicker.create({
+	el: '#example'
+});
+
+setYearBtn.onclick = () => {
+	datepicker.setYear(2018);
+};
+```
+
+| Prop | Type   | Required |
+| ---- | ------ | -------- |
+| year | Number | Yes      |
+
+<br />
+
+---
+
+<br />
