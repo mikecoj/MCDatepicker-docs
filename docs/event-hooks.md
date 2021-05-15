@@ -73,14 +73,15 @@ const datepicker = MCDatepicker.create({
 	el: '#datepicker'
 });
 
-datepicker.onSelect((date) => console.log('Selected date: ' + date));
+datepicker.onSelect((date, formatedDate) => console.log('Selected date: ' + date));
 ```
 
 #### callback props
 
-| Prop | Type   | Required |
-| ---- | ------ | -------- |
-| date | Object | No       |
+| Prop         | Type   | Required |
+| ------------ | ------ | -------- |
+| date         | Object | No       |
+| formatedDate | String | No       |
 
 <br />
 
