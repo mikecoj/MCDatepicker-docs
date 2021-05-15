@@ -92,7 +92,7 @@ Use this option to show or hide the calendar display in the `modal` mode.
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#example',
-	showCalendarDisplay: 'false'
+	showCalendarDisplay: false
 });
 ```
 
