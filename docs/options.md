@@ -129,7 +129,7 @@ This option closes the calendar automatically when it loses focus. By default th
 ```js
 const datepicker = MCDatepicker.create({
 	el: '#example',
-	closeOndblclick: false
+	closeOnBlur: true
 });
 ```
 
