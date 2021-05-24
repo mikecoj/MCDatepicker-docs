@@ -10,6 +10,7 @@ title: Configuration
 |            [`bodyType`](#bodytype)            | String  |    `modal`     | Sets the calendar mode.                      |
 |           [`autoClose`](#autoclose)           | Boolean |    `false`     | Closes the calendar when a date is selected. |
 |     [`closeOndblclick`](#closeondblclick)     | Boolean |     `true`     | Closes the calendar on double click.         |
+|         [`closeOnBlur`](#closeonblur)         | Boolean |    `false`     | Closes the calendar when it loses focus.     |
 | [`showCalendarDisplay`](#showcalendardisplay) | Boolean |     `true`     | Shows or hides the calendar display.         |
 |      [`customWeekDays`](#customweekdays)      |  Array  |  EN Weekdays   | Sets custom calendar weekdays.               |
 |        [`customMonths`](#custommonths)        |  Array  | EN Month names | Sets custom calendar months name.            |
@@ -107,6 +108,23 @@ const datepicker = MCDatepicker.create({
 ### closeOndblclick
 
 This option closes the calendar automatically by double-clicking on an active date. By default this option is set to `true`.
+
+```js
+const datepicker = MCDatepicker.create({
+	el: '#example',
+	closeOndblclick: false
+});
+```
+
+<br />
+
+---
+
+<br />
+
+### closeOnBlur
+
+This option closes the calendar automatically when it loses focus. By default this option is set to `false`.
 
 ```js
 const datepicker = MCDatepicker.create({
