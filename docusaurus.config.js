@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'MCDatepicker',
-  tagline: 'A Vanilla JS Datepicker',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Highly customizable Vanilla JS Datepicker with zero dependencies',
+  url: 'https://mcdatepicker.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
