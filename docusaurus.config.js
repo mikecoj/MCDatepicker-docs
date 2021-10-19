@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-	title: 'MCDatepicker',
-	tagline: 'A Vanilla JS Datepicker',
-	url: 'https://mcdatepicker.netlify.app/',
-	baseUrl: '/',
-	onBrokenLinks: 'throw',
-	onBrokenMarkdownLinks: 'warn',
-	favicon: 'img/favicon.ico',
-	organizationName: 'Mike Cojocari', // Usually your GitHub org/user name.
-	projectName: 'MCDatepicker', // Usually your repo name.
+  title: 'MCDatepicker',
+  tagline: 'Highly customizable Vanilla JS Datepicker with zero dependencies',
+  url: 'https://mcdatepicker.netlify.app',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'Mike Cojocari', // Usually your GitHub org/user name.
+  projectName: 'MCDatepicker', // Usually your repo name.
 
 	themeConfig: {
 		navbar: {
