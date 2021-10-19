@@ -33,6 +33,10 @@ module.exports = {
 		{
 			type: 'doc',
 			id: 'date-formating' // Document id (string).
+		},
+		{
+			type: 'doc',
+			id: 'theme' // Document id (string).
 		}
 	]
 };
